@@ -5,37 +5,106 @@
     <title>TWR Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="styles/main.css">
   </head>
 
   <body>
+   <div class="mainwrapper">
+    <div class="innerwrap">
       <div class="container-fluid">
           <div class="row">
               <div class="col-sm-6">
                 <h1>Tyler Roberts</h1>
               </div>
           </div>
-          <div class="row">
-              <div class="col-sm-6 col-sm-offset-6">
-                <h1>Web Developer</h1>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-sm-6">
-                <h1>Portfolio</h1>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-sm-6 col-sm-offset-6">
-                <h1>About</h1>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-sm-6">
-                <h1>Contact</h1>
-              </div>
-          </div>
-      </div>
 
+          <div class="row">
+              <div class="col-sm-6 col-sm-offset-6" data-toggle="collapse" data-target="#developer">
+                <h1>Web Developer</h1>
+                <div id="developer" class="collapse">
+                    <i class="devicon-rails-plain-wordmark"></i>
+                    <i class="devicon-ruby-plain-wordmark"></i>
+                    <i class="devicon-html5-plain-wordmark"></i>
+                    <i class="devicon-css3-plain-wordmark"></i>
+                    <i class="devicon-javascript-plain"></i>
+                    <i class="devicon-jquery-plain-wordmark"></i>
+                    <i class="devicon-angularjs-plain-wordmark"></i>
+                    <i class="devicon-bootstrap-plain-wordmark"></i>
+                    <i class="devicon-sass-original"></i>
+                    <i class="devicon-git-plain-wordmark"></i>
+                    <i class="devicon-heroku-original-wordmark"></i>
+                </div>
+              </div>
+
+          </div>
+          <div class="row">
+              <div class="col-sm-6 carousel slide" id="myCarousel" data-ride="carousel">
+
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <h1>Portfolio</h1>
+                  </div>
+                  <div class="item">
+                    <a href="https://github.com/twr349/bloc-jams-angular">
+                      <img src="assets\images\Blocjams.PNG" alt="BlocJams" class="img-responsive">
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="https://github.com/twr349/bloc-chat">
+                      <img src="assets\images\BlocChat.PNG" alt="BlocJams" class="img-responsive">
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="https://github.com/twr349/bloccit">
+                      <img src="assets\images\Bloccit.PNG" alt="Bloccit" class="img-responsive">
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="https://github.com/twr349/blocipedia">
+                      <img src="assets\images\blocipedia.PNG" alt="Blocipedia" class="img-responsive">
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="https://github.com/twr349/kele">
+                      <h1>Kele API</h1>
+                    </a>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-6 col-sm-offset-6">
+                <h1 data-toggle="collapse" href="#about" aria-expanded="false" aria-controls="about">About</h1>
+                <div class="collapse" id="about">
+                  <p>Currently working on a web developer course from Bloc.io.  Living in sunny Phoenix, with my wife and our pets.</p>    
+                </div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <h1 data-toggle="collapse" href="#contact" aria-expanded="false" aria-controls="contact">Contact</h1>
+                <div class="collapse" id="contact">
+                  <form action="https://getsimpleform.com/messages?form_api_token=bdf28115d797a7716a2373657fe27b93" method="post">
+                    <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+                    <input type='hidden' name='redirect_to' value='http://tylerroberts.us'/>
+                    <div class="form-group">
+                      <input type='text' name='name' class="form-control" placeholder='Your Full Name' />
+                    </div>
+                    <div class="form-group">
+                      <input type='email' name='email' class="form-control" placeholder='Your E-mail Address' />
+                    </div>
+                    <div class="form-group">
+                      <textarea name='message' class="form-control" placeholder='Write your message ...'></textarea>
+                    </div>
+                    <input type='submit' class="btn btn-default" value='Send Message' />
+                  </form>
+                </div>
+            </div>
+          </div>
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>

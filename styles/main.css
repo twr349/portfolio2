@@ -37,6 +37,12 @@ color: #F2F2F2;
       object-fit: contain;
 }
 
+#pong a {
+  font-family: 'Monoton', cursive;
+  font-size: 40px;
+  color: red;
+  text-align: center;
+}
 
 #contact {
   align-content: center;

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pong</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <body>
+    <div class="container">
+      <h1>Pong Bot</h1>
+      <div class="alert alert-info">
+         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+         <strong>Rules!</strong> First to 11 wins.
+         <p>Control with up and down arrow keys. Good luck!</p>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="canvasContainer"></div>
+        </div>
+        <div class='col-sm-6'>
+          <h3>Human</h3>
+          <h3 id="scoreHuman">0</h3>
+          <div class="alert alert-success alert-dismissable" id="winGame" onclick="location.reload()" style="visibility:hidden">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Winner!</strong> Winner chicken dinner!
+            <p>Click to play again!</p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <h3>Bot</h3>
+          <h3 id="scoreComputer">0</h3>
+          <div class="alert alert-danger alert-dismissable" id="endGame" onclick="location.reload()" style="visibility:hidden">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Haha!</strong> Bot Rules!
+            <p>Click to try again!</p>
+          </div>
+        </div>
+      </div>
+      <div class="music-controls" id="music">
+        <h2>Bot's Song</h2>
+        <div class="row">
+          <div class="col-sm-3">
+            <button id="play">Play</button>
+          </div>
+          <div class="col-sm-3">
+            <button id="pause">Pause</button>
+          </div>
+          <div class="col-sm-3">
+            <button id="restart">Restart</button>
+          </div>
+          <div class="col-sm-3">
+            <input class="volume" id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)">Volume:</input>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script src="pongScript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="music.js"></script>
+  </body>
+
+</html>

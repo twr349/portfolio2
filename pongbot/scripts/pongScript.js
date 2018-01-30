@@ -36,6 +36,9 @@ var score = {
   human: 0,
   computer: 0
 };
+var soundWall = new Audio("assets/sound-effects/ping_pong_wall.wav");
+var soundPaddle = new Audio("assets/sound-effects/ping_pong_paddle.wav");
+var soundPoint = new Audio("assets/sound-effects/ping_pong_point.wav");
 
 var render = function() {
   context.fillStyle = "#000000";
@@ -102,9 +105,9 @@ Computer.prototype.update = function(ball) {
   var y_pos = ball.y;
   var diff = -((this.paddle.y + (this.paddle.height / 2)) - y_pos);
   if(diff < 0 && diff < -4) {
-    diff = -5;
+    diff = -7;
   } else if(diff > 0 && diff > 4) {
-    diff = 5;
+    diff = 7;
   }
   this.paddle.move(0, diff);
   if(this.paddle.y < 0) {
@@ -153,9 +156,11 @@ Ball.prototype.update = function(paddle1, paddle2) {
 
   if(this.y - 5 < 0) {
     this.y = 5;
+    soundWall.play();
     this.y_speed = -this.y_speed;
   } else if(this.y + 5 > 400) {
     this.y = 395;
+    soundWall.play();
     this.y_speed = -this.y_speed;
   }
 
@@ -167,8 +172,9 @@ Ball.prototype.update = function(paddle1, paddle2) {
     this.x = 300;
     this.y = 200;
     score.computer ++;
+    soundPoint.play();
     document.getElementById('scoreComputer').innerHTML = score.computer;
-    if (score.computer == 11) {
+    if(score.computer == 11) {
       this.x_speed = 0;
       this.y_speed = 0;
       document.getElementById('endGame').style.visibility = "visible";
@@ -181,6 +187,7 @@ Ball.prototype.update = function(paddle1, paddle2) {
     this.x = 300;
     this.y = 200;
     score.human ++;
+    soundPoint.play();
     document.getElementById('scoreHuman').innerHTML = score.human;
     if (score.human == 11) {
       this.x_speed = 0;
@@ -194,12 +201,14 @@ Ball.prototype.update = function(paddle1, paddle2) {
       this.x_speed = 3;
       this.y_speed += (paddle1.y_speed / 2);
       this.x += this.x_speed;
+      soundPaddle.play();
     }
   } else {
     if(left_x < (paddle2.x + paddle2.width) && right_x > paddle2.x && left_y < (paddle2.y + paddle2.height) && right_y > paddle2.y) {
       this.x_speed = -3;
       this.y_speed += (paddle2.y_speed / 2);
       this.x += this.x_speed;
+      soundPaddle.play();
     }
   }
 };

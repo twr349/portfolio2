@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>TWR Portfolio</title>
@@ -9,115 +9,135 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="styles/main.css">
   </head>
-
   <body>
-   <div class="mainwrapper">
-    <div class="innerwrap">
-      <div class="container-fluid">
-          <div class="row">
-              <div class="col-sm-6" data-toggle="collapse" data-target="#pong">
-                <h1>Tyler Roberts</h1>
-                <div id="pong" class="collapse">
-                    <a href="pongbot\index.html">Play  Pong  Bot?</a>
-                </div>
-              </div>
-          </div>
-
-          <div class="row">
-              <div class="col-sm-6 col-sm-offset-6" data-toggle="collapse" data-target="#developer">
-                <h1>Web Developer</h1>
-                <div id="developer" class="collapse">
-                    <i class="devicon-rails-plain-wordmark"></i>
-                    <i class="devicon-ruby-plain-wordmark"></i>
-                    <i class="devicon-html5-plain-wordmark"></i>
-                    <i class="devicon-css3-plain-wordmark"></i>
-                    <i class="devicon-javascript-plain"></i>
-                    <i class="devicon-jquery-plain-wordmark"></i>
-                    <i class="devicon-angularjs-plain-wordmark"></i>
-                    <i class="devicon-bootstrap-plain-wordmark"></i>
-                    <i class="devicon-sass-original"></i>
-                    <i class="devicon-git-plain-wordmark"></i>
-                    <i class="devicon-heroku-original-wordmark"></i>
-                </div>
-              </div>
-
-          </div>
-          <div class="row">
-              <div class="col-sm-6 carousel slide" id="myCarousel" data-ride="carousel">
-
-                <div class="carousel-inner" role="listbox">
-                  <div class="item active">
-                    <h1>Portfolio</h1>
-                  </div>
-                  <div class="item">
-                    <a href="https://github.com/twr349/bloc-jams-angular">
-                      <img src="assets\images\Blocjams.PNG" alt="BlocJams" class="img-responsive">
-                    </a>
-                  </div>
-                  <div class="item">
-                    <a href="https://github.com/twr349/bloc-chat">
-                      <img src="assets\images\BlocChat.PNG" alt="BlocChat" class="img-responsive">
-                    </a>
-                  </div>
-                  <div class="item">
-                    <a href="https://github.com/twr349/bloccit">
-                      <img src="assets\images\Bloccit.PNG" alt="Bloccit" class="img-responsive">
-                    </a>
-                  </div>
-                  <div class="item">
-                    <a href="https://github.com/twr349/blocipedia">
-                      <img src="assets\images\blocipedia.PNG" alt="Blocipedia" class="img-responsive">
-                    </a>
-                  </div>
-                  <div class="item">
-                    <a href="https://github.com/twr349/blocitoff">
-                      <img src="assets\images\sevendaystodo.PNG" alt="blocitoff" class="img-responsive">
-                    </a>
-                  </div>
-                  <div class="item">
-                    <a href="https://github.com/twr349/pong">
-                      <img src="assets\images\pongbot.PNG" alt="pongbot" class="img-responsive">
-                    </a>
-                  </div>
-                  <div class="item">
-                    <a href="https://github.com/twr349/kele">
-                      <h1>Kele API</h1>
-                    </a>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-sm-6 col-sm-offset-6">
-                <h1 data-toggle="collapse" href="#about" aria-expanded="false" aria-controls="about">About</h1>
-                <div class="collapse" id="about">
+     <div class="container">
+       <div class="jumbotron">
+         <div class="img"></div>
+           <div class="container">
+             <div class="row">
+                <div class="col-lg-12">
+                  <h1>Tyler Roberts</h1>
+                  <h2>About Me</h2>
                   <p>I’m a food enthusiast, world traveler,  photographer, computer nerd, kitten foster, and a husband in addition to being a Web developer looking to expand my skills through creating new and interesting applications. My passion since very young always gravitated towards computers. I remember loading video games from floppy disks, using DOS, before I could even tie my shoes.  From using the family computer to building my own, I always wanted to work with them. After many years in the foodservice industry, I decided to leave it all behind and become a web developer. With the blessing of my wonderful wife, I quit my job and dove into my dream.  I look forward to future endeavours wherever they may be. </p>
                 </div>
-              </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6">
-              <h1 data-toggle="collapse" href="#contact" aria-expanded="false" aria-controls="contact">Contact</h1>
-                <div class="collapse" id="contact">
-                  <form action="https://getsimpleform.com/messages?form_api_token=bdf28115d797a7716a2373657fe27b93" method="post">
-                    <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-                    <input type='hidden' name='redirect_to' value='http://tylerroberts.us'/>
-                    <div class="form-group">
-                      <input type='text' name='name' class="form-control" placeholder='Your Full Name' />
-                    </div>
-                    <div class="form-group">
-                      <input type='email' name='email' class="form-control" placeholder='Your E-mail Address' />
-                    </div>
-                    <div class="form-group">
-                      <textarea name='message' class="form-control" placeholder='Write your message ...'></textarea>
-                    </div>
-                    <input type='submit' class="btn btn-default" value='Send Message' />
-                  </form>
-                </div>
+             </div>
+           </div>
+         </div>
+         <div class="portfolio">
+           <h1>Portfolio</h1>
+             <div class="row">
+               <div class="projects col-md-6">
+                 <div class="img col-md-6">
+                    <img src="assets\images\blocChat.PNG" class="img-responsive" alt="BlocChat">
+                 </div>
+                 <div class="text col-md-6">
+                     <i class="devicon-html5-plain-wordmark"></i>
+                     <i class="devicon-css3-plain-wordmark"></i>
+                     <i class="devicon-javascript-plain"></i>
+                     <i class="devicon-jquery-plain-wordmark"></i>
+                     <i class="devicon-angularjs-plain"></i>
+                 </div>
+                 <a class="github" href="https://github.com/twr349/bloc-chat">View on GitHub<i class="devicon-github-plain"></i></a>
+               </div>
+               <div class="projects col-md-6">
+                 <div class="img col-md-6">
+                    <img src="assets\images\bloccit.PNG" class="img-responsive" alt="Bloccit">
+                 </div>
+                 <div class="text col-md-6">
+                     <i class="devicon-rails-plain-wordmark"></i>
+                     <i class="devicon-ruby-plain-wordmark"></i>
+                     <i class="devicon-html5-plain-wordmark"></i>
+                     <i class="devicon-css3-plain-wordmark"></i>
+                     <i class="devicon-bootstrap-plain-wordmark"></i>
+                     <i class="devicon-sass-original"></i>
+                     <i class="devicon-heroku-original-wordmark"></i>
+                 </div>
+                 <a class="github" href="https://github.com/twr349/bloccit">View on Github<i class="devicon-github-plain"></i></a>
+               </div>
+               <div class="projects col-md-6">
+                 <div class="img col-md-6">
+                    <img src="assets\images\blocipedia.PNG" class="img-responsive" alt="Blocipedia">
+                 </div>
+                 <div class="text col-md-6">
+                     <i class="devicon-rails-plain-wordmark"></i>
+                     <i class="devicon-ruby-plain-wordmark"></i>
+                     <i class="devicon-html5-plain-wordmark"></i>
+                     <i class="devicon-css3-plain-wordmark"></i>
+                     <i class="devicon-bootstrap-plain-wordmark"></i>
+                     <i class="devicon-sass-original"></i>
+                     <i class="devicon-heroku-original-wordmark"></i>
+                 </div>
+                 <a class="github" href="https://github.com/twr349/blocipedia">View on GitHub<i class="devicon-github-plain"></i></a>
+               </div>
+               <div class="projects col-md-6">
+                 <div class="img col-md-6">
+                    <img src="assets\images\blocjams.PNG" class="img-responsive" alt="BlocJams">
+                 </div>
+                 <div class="text col-md-6">
+                     <i class="devicon-html5-plain-wordmark"></i>
+                     <i class="devicon-css3-plain-wordmark"></i>
+                     <i class="devicon-javascript-plain"></i>
+                     <i class="devicon-jquery-plain-wordmark"></i>
+                     <i class="devicon-angularjs-plain"></i>
+                     <i class="devicon-bootstrap-plain-wordmark"></i>
+                 </div>
+                 <a class="github" href="https://github.com/twr349/bloc-jams-angular">View on GitHub<i class="devicon-github-plain"></i></a>
+               </div>
+               <div class="projects col-md-6">
+                 <div class="img col-md-6">
+                    <img src="assets\images\pongbot.PNG" class="img-responsive" alt="PongBot">
+                 </div>
+                 <div class="text col-md-6">
+                     <i class="devicon-html5-plain-wordmark"></i>
+                     <i class="devicon-css3-plain-wordmark"></i>
+                     <i class="devicon-javascript-plain"></i>
+                     <i class="devicon-jquery-plain-wordmark"></i>
+                     <i class="devicon-bootstrap-plain-wordmark"></i>
+                 </div>
+                 <a class="github" href="https://github.com/twr349/pong">View on GitHub<i class="devicon-github-plain"></i></a>
+               </div>
+               <div class="projects col-md-6">
+                 <div class="img col-md-6">
+                    <img src="assets\images\sevendaystodo.PNG" class="img-responsive" alt="7DaysToDo">
+                 </div>
+                 <div class="text col-md-6">
+                     <i class="devicon-rails-plain-wordmark"></i>
+                     <i class="devicon-ruby-plain-wordmark"></i>
+                     <i class="devicon-html5-plain-wordmark"></i>
+                     <i class="devicon-css3-plain-wordmark"></i>
+                     <i class="devicon-bootstrap-plain-wordmark"></i>
+                     <i class="devicon-sass-original"></i>
+                     <i class="devicon-heroku-original-wordmark"></i>
+                 </div>
+                 <a class="github" href="https://github.com/twr349/blocitoff">View on GitHub<i class="devicon-github-plain"></i></a>
+               </div>
             </div>
           </div>
-
-
+          <div class="contact-me">
+            <h1>Contact Me</h1>
+            <div class="contact-form">
+            <form class="col-md-12" action="https://getsimpleform.com/messages?form_api_token=bdf28115d797a7716a2373657fe27b93" method="post">
+              <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+              <input type='hidden' name='redirect_to' value='http://tylerroberts.us'/>
+              <div class="form-group">
+                <input type='text' name='name' class="form-control" placeholder='Your Full Name' />
+              </div>
+              <div class="form-group">
+                <input type='email' name='email' class="form-control" placeholder='Your E-mail Address' />
+              </div>
+              <div class="form-group">
+                <textarea name='message' class="form-control" placeholder='Write your message ...'></textarea>
+              </div>
+              <input type='submit' class="btn btn-default" value='Send Message' />
+            </form>
+          </div>
+          </div>
+          <div class="arcade col-md-12">
+            <a href="pongbot\index.html">
+            <h1>Pong Bot</h1>
+            </a>
+          </div>
+       </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>

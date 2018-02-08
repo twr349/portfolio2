@@ -1,6 +1,6 @@
 body {
   max-width: 1020px;
-  max-height: 80%;
+  max-height: 90%;
   position: absolute;
   margin: auto;
   top: 0;
@@ -10,46 +10,110 @@ body {
   cursor: pointer;
 }
 
-.col-sm-6 {
-  background-color: #333333;
+.jumbotron .img {
+    margin-bottom: 0px;
+    opacity: 0.4;
+    color: #fff;
+    background: #000 url("phxsunset.jpg") top center no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    border-radius: 25px;
 }
 
-
-h1 {
-font-size: 64px;
-text-align: center;
-color: #F2F2F2;
+.jumbotron {
+  position:relative;
+  padding-top:50px;
+  padding-bottom:50px;
+  background: none;
+}
+.jumbotron .container {
+  position:relative;
+  z-index:2;
 }
 
-#developer {
-  color: #F2F2F2;
-  font-size: 64px;
+.jumbotron .container h1 {
   text-align: center;
-  padding-bottom: 5px;
+
+
+}
+.jumbotron p {
+  text-indent: 50px;
+}
+
+.portfolio {
+  text-align: center;
+}
+.portfolio h1 {
+  background: #8db0ce;
+  border-radius: 25px;
 }
 
 
-.carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 100%;
-      height: 100px;
-      margin: auto;
-      object-fit: contain;
+
+.text {
+  text-align: left;
 }
 
-#pong a {
-  font-family: 'Monoton', cursive;
-  font-size: 40px;
+.contact-me {
+  text-align: center;
+}
+
+.contact-me h1 {
+  background: #8db0ce;
+  border-radius: 25px;
+}
+
+.contact .col-md-12 {
+  background-color: #8db0ce;
+  border-radius: 25px;
+  display: inline-block;
+  margin: 5px;
+}
+
+
+.arcade {
+  margin: 10px;
+  font-family: "Monoton";
+  text-align: center;
   color: red;
-  text-align: center;
+  background-color: black;
+  border-radius: 25px;
+
 }
 
-#contact {
-  align-content: center;
-  padding-bottom: 10px;
+.projects {
+  padding: 10px;
+  padding-left: 10px;
+  margin-bottom: 5px;
+  border: 5px white solid;
+  background-color: #8db0ce;
+  border-radius: 25px;
 }
 
-#about {
+.project-img {
+  height: 150px;
+  width: 200px;
+  border-radius: 25px;
+}
+
+.arcade a {
+  text-decoration: none;
+  color: red;
+}
+
+.github {
   text-align: center;
-  color: #F2F2F2;
+  font-size: 2.5vmin;
+  color: white;
+}
+
+.text i {
+  color: white;
+  font-size: 5vmin;
 }

@@ -55,7 +55,7 @@ body {
   color: white;
 }
 
-.portfolio h1 {
+.portfolio > h1{
   background: #8db0ce;
   border-radius: 25px;
   font-family: 'Roboto', sans-serif;
@@ -69,7 +69,7 @@ body {
   color: white;
 }
 
-.contact-me h1 {
+.contact-me {
   background: #8db0ce;
   border-radius: 25px;
 }
@@ -79,17 +79,6 @@ body {
   border-radius: 25px;
   display: inline-block;
   margin: 5px;
-}
-
-
-.arcade {
-  margin: 10px;
-  font-family: "Monoton";
-  text-align: center;
-  color: red;
-  background-color: black;
-  border-radius: 25px;
-
 }
 
 .projects {
@@ -106,9 +95,18 @@ body {
  margin: 0 auto;
 }
 
-.arcade a {
+.arcade {
   text-decoration: none;
   color: red;
+}
+
+.arcade h1 {
+  margin: 10px;
+  font-family: "Monoton";
+  text-align: center;
+  color: red;
+  background-color: black;
+  border-radius: 25px;
 }
 
 .github {
@@ -120,6 +118,5 @@ body {
 .text {
   text-align: center;
   color: white;
-  font-size: 2.5vmax;
-
+  font-size: 2em;
 }

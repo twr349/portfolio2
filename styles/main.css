@@ -10,9 +10,10 @@ body {
   cursor: pointer;
 }
 
-.jumbotron .img {
+
+.jumbotron .backimg {
     margin-bottom: 0px;
-    opacity: 0.4;
+    opacity: 0.6;
     color: #fff;
     background: #000 url("phxsunset.jpg") top center no-repeat;
     width: 100%;
@@ -39,29 +40,33 @@ body {
 
 .jumbotron .container h1 {
   text-align: center;
-
-
+  font-family: 'Roboto', sans-serif;
+  color: white;
 }
+
 .jumbotron p {
   text-indent: 50px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
 }
 
-.portfolio {
-  text-align: center;
+.jumbotron h2 {
+  font-family: 'Roboto', sans-serif;
+  color: white;
 }
+
 .portfolio h1 {
   background: #8db0ce;
   border-radius: 25px;
-}
-
-
-
-.text {
-  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-align: center;
 }
 
 .contact-me {
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: white;
 }
 
 .contact-me h1 {
@@ -89,17 +94,16 @@ body {
 
 .projects {
   padding: 10px;
-  padding-left: 10px;
   margin-bottom: 5px;
   border: 5px white solid;
   background-color: #8db0ce;
   border-radius: 25px;
+  text-align: center;
 }
 
-.project-img {
-  height: 150px;
-  width: 200px;
-  border-radius: 25px;
+.img-responsive {
+ border-radius: 25px;
+ margin: 0 auto;
 }
 
 .arcade a {
@@ -113,7 +117,9 @@ body {
   color: white;
 }
 
-.text i {
+.text {
+  text-align: center;
   color: white;
-  font-size: 5vmin;
+  font-size: 2.5vmax;
+
 }

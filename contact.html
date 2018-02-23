@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Tyler Roberts</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a data-toggle="collapse" data-parent="#accordion" href="#collapse1">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="devicon-github-plain" href="https://github.com/twr349"></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container contact text-center">
+      <div class="jumbotron">
+        <h1>Contact Me</h1>
+        <div class="contact-form">
+          <form action="https://getsimpleform.com/messages?form_api_token=bdf28115d797a7716a2373657fe27b93" method="post">
+          <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+          <input type='hidden' name='redirect_to' value='http://tylerroberts.us'/>
+            <div class="form-group">
+              <input type='text' name='name' class="form-control" placeholder='Your Full Name' />
+            </div>
+            <div class="form-group">
+              <input type='email' name='email' class="form-control" placeholder='Your E-mail Address' />
+            </div>
+            <div class="form-group">
+              <textarea name='message' class="form-control" placeholder='Write your message ...'></textarea>
+            </div>
+          <input type='submit' class="btn btn-default" value='Send Message' />
+          </form>
+       </div>
+      </div>
+    </div>
+  </body>
+</html>

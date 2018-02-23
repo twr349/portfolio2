@@ -1,5 +1,4 @@
 body {
-  max-width: 1020px;
   max-height: 90%;
   position: absolute;
   margin: auto;
@@ -7,116 +6,19 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  cursor: pointer;
 }
 
 
-.jumbotron .backimg {
-    margin-bottom: 0px;
-    opacity: 0.6;
-    color: #fff;
-    background: #000 url("phxsunset.jpg") top center no-repeat;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    overflow: hidden;
-    position:absolute;
-    top:0;
-    left:0;
-    z-index:1;
-    border-radius: 25px;
+.container-fluid {
+   margin: 10px;
 }
 
-.jumbotron {
-  position:relative;
-  padding-top:50px;
-  padding-bottom:50px;
-  background: none;
-}
-.jumbotron .container {
-  position:relative;
-  z-index:2;
-}
-
-.jumbotron .container h1 {
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  color: white;
-}
-
-.jumbotron p {
-  text-indent: 50px;
-  font-family: 'Roboto', sans-serif;
-  color: white;
-}
-
-.jumbotron h2 {
-  font-family: 'Roboto', sans-serif;
-  color: white;
-}
-
-.portfolio > h1{
-  background: #8db0ce;
-  border-radius: 25px;
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  text-align: center;
-}
-
-.contact-me {
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  color: white;
-}
-
-.contact-me {
-  background: #8db0ce;
-  border-radius: 25px;
-}
-
-.contact .col-md-12 {
-  background-color: #8db0ce;
-  border-radius: 25px;
-  display: inline-block;
-  margin: 5px;
-}
-
-.projects {
-  padding: 10px;
-  margin-bottom: 5px;
-  border: 5px white solid;
-  background-color: #8db0ce;
-  border-radius: 25px;
-  text-align: center;
-}
-
-.img-responsive {
- border-radius: 25px;
- margin: 0 auto;
-}
-
-.arcade {
-  text-decoration: none;
-  color: red;
-}
-
-.arcade h1 {
+#collapse1 {
   margin: 10px;
+}
+
+.pongbot h1{
   font-family: "Monoton";
   text-align: center;
   color: red;
-  background-color: black;
-  border-radius: 25px;
-}
-
-.github {
-  text-align: center;
-  font-size: 2.5vmin;
-  color: white;
-}
-
-.text {
-  text-align: center;
-  color: white;
-  font-size: 2em;
 }
